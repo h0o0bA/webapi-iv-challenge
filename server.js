@@ -12,7 +12,7 @@ server.use("/api/users", userRouter);
 server.use("/api/posts", postRouter);
 
 server.get("/", (req, res) => {
-  res.send(`<h2>Web API III - Middleware Challenge !</h2>`);
+  res.send(`<h2>Web API IV - Deployment Challenge !</h2>`);
 });
 
 //custom middleware
