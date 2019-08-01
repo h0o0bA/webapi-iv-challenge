@@ -12,7 +12,10 @@ server.use("/api/users", userRouter);
 server.use("/api/posts", postRouter);
 
 server.get("/", (req, res) => {
-  res.send(`<h2>Web API IV - Deployment Challenge !</h2>`);
+  res.status(200).json({
+    challenge: "Web API IV - Deployment Challenge !",
+    messageOfTheDay: process.env.MOTD
+  });
 });
 
 //custom middleware
